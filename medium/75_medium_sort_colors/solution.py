@@ -51,3 +51,4 @@ class Solution:
                 nums[i], nums[pointer0] = nums[pointer0], nums[i]
                 pointer0 += 1
             i += 1
+
