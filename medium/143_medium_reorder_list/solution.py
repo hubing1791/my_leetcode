@@ -8,7 +8,7 @@ class ListNode:
 
 
 class Solution:
-    # 整体思路没问题，但是这样写找出的后半段可能反转后会出现公共节点。
+    # 整体思路没问题，但是这样写找出的后半段可能反转后会出现公共节点，就会出问题。
     def reorderList(self, head: ListNode) -> None:
         slow = fast = head
         while 1:
@@ -35,3 +35,9 @@ class Solution:
             cur_back.next = cur_pre_temp
             cur_pre, cur_back = cur_pre_temp,cur_back_temp
 
+    # 参考答案的第一班
+    def reorderList_1(self, head: ListNode) -> None:
+        new_nodehead = head
+        node_list = []
+        while new_nodehead:
+             
