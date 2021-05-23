@@ -4,8 +4,8 @@ import sys
 
 sys.path.append("..")
 
-from some_practice.initialize_data_struct.InitializeListNode import ListNode
-from some_practice.initialize_data_struct.InitializeListNode import InitLL
+from custom_moudle.initialize_data_struct.InitializeListNode import ListNode
+from custom_moudle.initialize_data_struct.InitializeListNode import InitLL
 
 
 class Solution:

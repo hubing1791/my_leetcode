@@ -2,8 +2,8 @@
 import sys
 
 sys.path.append("..")
-from some_practice.initialize_data_struct.InitializeTree import TreeNode
-from some_practice.initialize_data_struct.InitializeTree import InitializeTree
+from custom_moudle.initialize_data_struct.InitializeTree import TreeNode
+from custom_moudle.initialize_data_struct.InitializeTree import InitializeTree
 
 
 class Solution:
