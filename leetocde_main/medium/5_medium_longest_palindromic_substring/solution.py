@@ -1,5 +1,6 @@
 class Solution:
-    def longestPalindrome(self, s: str) -> str:#官方解答第一种，动态规划,速度一坨屎，比第二种中心扩散慢了9倍
+    # 官方解答第一种，动态规划,速度一坨屎，比第二种中心扩散慢了9倍
+    def longestPalindrome(self, s: str) -> str:
         length_s = len(s)
         dp = [[False]*length_s for i in range(length_s)]  # 状态转移矩阵
         result = ''
