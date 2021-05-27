@@ -16,7 +16,7 @@ class Solution:
             if (5 - round_ip) > length - index_now or (5 - round_ip) * 3 < length - index_now:
                 return
             if round_ip == 4:
-
+                pass
             if length - index_now >= 1:
                 pass
 
