@@ -1,7 +1,7 @@
 # https://leetcode-cn.com/problems/search-in-rotated-sorted-array/
 from typing import List
 
-
+# 核心思路，一分为二，一定有一部分是有序的，另一部分是部分有序的，判断是否在有序的那一部分，不在就在另一半即可
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         left, right = 0, len(nums) - 1  # 左右边界
