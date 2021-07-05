@@ -1,14 +1,11 @@
 # https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/
 
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+
 
 
 from collections import deque
+
+from custom_moudle.initialize_data_struct.InitializeTree import TreeNode
 
 
 class Solution:

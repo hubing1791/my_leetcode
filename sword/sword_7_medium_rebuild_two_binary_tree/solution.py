@@ -2,13 +2,7 @@
 
 from typing import List
 
-
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+from custom_moudle.initialize_data_struct.InitializeTree import TreeNode
 
 
 class Solution:
