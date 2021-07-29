@@ -3,29 +3,41 @@
 class Trie:
 
     def __init__(self):
-        """
-        Initialize your data structure here.
-        """
-
+        self.children = [None] * 26
+        self.isEnd = False
 
     def insert(self, word: str) -> None:
-        """
-        Inserts a word into the trie.
-        """
-
+        # 题解这儿相当于用迭代来实现遍历，我一开始习惯性的想到了递归
+        node = self
+        for char in word:
+            index = ord(char) - ord('a')
+            if not node.children[index]:
+                node.children[index] = Trie()
+            node = node.children[index]
+        # 最后一个node自然是True
+        node.isEnd = True
 
     def search(self, word: str) -> bool:
-        """
-        Returns if the word is in the trie.
-        """
+        node = self
+        for char in word:
+            index = ord(char) - ord('a')
+            if not node.children[index]:
+                return False
+            else:
+                node = node.children[index]
 
+        return node.isEnd
 
     def startsWith(self, prefix: str) -> bool:
-        """
-        Returns if there is any word in the trie that starts with the given prefix.
-        """
+        node = self
+        for char in prefix:
+            index = ord(char) - ord('a')
+            if not node.children[index]:
+                return False
+            else:
+                node = node.children[index]
 
-
+        return True
 
 # Your Trie object will be instantiated and called as such:
 # obj = Trie()
