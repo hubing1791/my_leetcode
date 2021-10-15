@@ -29,7 +29,8 @@ class Solution:
             if fore_node[1]:
                 if fore_node[1] == temp_node[1]:
                     fore_node[0].next = temp_node[0]
-                    fore_node = temp_node
+            # 一开始将接下来的这行写进了if，而初始的fore_node[1]为0,永远不执行也不更新
+            fore_node = temp_node
         return root
 
     # 这题参考了题解，可以利用已经建立好的next，从而实现o(1)的空间复杂度
