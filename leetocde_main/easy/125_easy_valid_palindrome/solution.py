@@ -15,7 +15,7 @@ class Solution:
                 left += 1
             while left < right and not (
                     48 <= ord(s[right]) <= 57 or 65 <= ord(s[right]) <= 90 or 97 <= ord(s[right]) <= 122):
-                right -= 1
+                 right -= 1
             if left < right:
                 if (abs(ord(s[left]) - ord(s[right])) == 32 and ord(s[right]) > 64 and ord(s[left]) > 64) or (
                         ord(s[left]) - ord(s[right])) == 0:
