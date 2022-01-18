@@ -1,3 +1,5 @@
+# https://leetcode-cn.com/problems/3sum/
+
 class Solution:
     # 对于两数和不能用集合来操作，因为2 -1 -1 这种组合也存在
     # 逻辑正确，跑不过，超时
@@ -46,9 +48,9 @@ class Solution:
                     index_right -= 1
                     index_left += 1
                 elif nums[i] + nums[index_left] + nums[index_right] > 0:
-                    index_right-=1
+                    index_right -= 1
                 else:
-                    index_left+=1
+                    index_left += 1
         return result
 
 
