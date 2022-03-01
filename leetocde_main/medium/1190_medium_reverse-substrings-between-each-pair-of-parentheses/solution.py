@@ -24,3 +24,7 @@ class Solution:
         return ''.join(stack)
 
     def reverseParenthesesofficial2(self, s: str) -> str:
+        # 找到对应的括号并生成对称的字典。
+        length = len(s)
+        location_dict = dict()
+        
