@@ -64,6 +64,9 @@ class Solution:
                 temp_node_val.pop(temp_min_index)
             add_pointer.next = None  # 其实不断开也可，写一下保险
 
+    def mergeKLists_heap(self, lists: List[ListNode]) -> ListNode:
+        return
+
 
 if __name__ == '__main__':
     for i in range(1, 1):
