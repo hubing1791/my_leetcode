@@ -36,4 +36,4 @@ def create_information(path_num: int, link: str, level_num: int, pro_num: str, n
 
 
 if __name__ == '__main__':
-    create_information(3, 'https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/', 1, "45", 'min_Number')
+    create_information(3, 'https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/', 1, "46", 'translate_num_to_latin')
