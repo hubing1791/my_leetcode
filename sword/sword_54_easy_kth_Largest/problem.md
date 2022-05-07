@@ -1,4 +1,4 @@
-### sword-53-二叉搜索树的第k大节点
+### sword-54-二叉搜索树的第k大节点
 
 [题目链接](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
 

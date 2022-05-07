@@ -36,6 +36,6 @@ def create_information(path_num: int, link: str, level_num: int, pro_num: str, n
 
 
 if __name__ == '__main__':
-    create_information(3, 'https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/',
-                       0, "54", 'kth_Largest')
+    create_information(3, 'https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/',
+                       0, "68_1", 'lowest_Common_Ancestor')
 
