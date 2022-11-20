@@ -23,8 +23,12 @@ def create_information(path_num: int, link: str, level_num: int, pro_num: str, n
     if name_str == '':
         name_str = link.split('/')[-2].replace('-', '_')
     sub_path_name = pre_list[path_num] + pro_num + '_' + levels[level_num] + '_' + name_str
-    full_path = paths[path_num] + sub_path_name + '/'
+    if path_num == 2:
+        full_path = paths[path_num] +levels[level_num]+'/' +sub_path_name + '/'
+    else:
+        full_path = paths[path_num] + sub_path_name + '/'
     is_exists = os.path.exists(full_path)
+    print(full_path)
     if not is_exists:
         os.mkdir(full_path)
     f = open(full_path + 'problem.md', 'w', encoding='utf-8')
@@ -36,6 +40,6 @@ def create_information(path_num: int, link: str, level_num: int, pro_num: str, n
 
 
 if __name__ == '__main__':
-    create_information(0, 'https://leetcode-cn.com/problems/compress-string-lcci/',
-                       0, "01_06", 'compress_String')
+    create_information(2, 'https://leetcode.cn/problems/max-consecutive-ones-iii/',
+                       1, "1004", 'max-consecutive-ones-iii')
 

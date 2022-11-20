@@ -1,4 +1,7 @@
 # nums如果是单列表或者空列表，search_half_recur无法正常运行
+from typing import List
+
+
 class Solution:
     def search_half_recur(self, nums, a, b, target):
         if b - a == 1 and nums[a] < target <= nums[b]:
@@ -23,6 +26,20 @@ class Solution:
             else:
                 return 1
         return self.search_half_recur(nums, 0, len(nums) - 1, target)
+
+    # 这是后来新写的版本
+    def searchInsert_new(self, nums: List[int], target: int) -> int:
+        l, r = 0, len(nums)-1
+        # 没等号的话最后一次不知道往哪移动
+        while l <= r:
+            med = (l + r) // 2
+            if nums[med] == target:
+                return med
+            elif nums[med] < target:
+                l = med + 1
+            else:
+                r = med - 1
+        return l
 
 
 if __name__ == '__main__':
