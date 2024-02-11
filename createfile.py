@@ -32,6 +32,8 @@ def create_information(path_num: int, link: str, level_num: int, pro_num: str, n
     if not is_exists:
         os.mkdir(full_path)
     f = open(full_path + 'problem.md', 'w', encoding='utf-8')
+    f.write(f"### {pro_num}.{name_str}\n")
+    f.write(f"[{name_str}]({link})\n")
     f = open(full_path + 'solution.py', 'w', encoding='utf-8')
     f.write('')
     now_date = datetime.date.today().__str__()
@@ -40,6 +42,6 @@ def create_information(path_num: int, link: str, level_num: int, pro_num: str, n
 
 
 if __name__ == '__main__':
-    create_information(2, 'https://leetcode.cn/problems/max-consecutive-ones-iii/',
-                       1, "1004", 'max-consecutive-ones-iii')
+    create_information(2, 'https://leetcode.cn/problems/jump-game-ii/',
+                       1, "45", 'jump-game-ii')
 
