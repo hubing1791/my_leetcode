@@ -1,5 +1,5 @@
+# 
 # 根据题目链接自动生成子目录及写入初始文件
-
 import os
 import datetime
 paths = [
@@ -42,6 +42,6 @@ def create_information(path_num: int, link: str, level_num: int, pro_num: str, n
 
 
 if __name__ == '__main__':
-    create_information(2, 'https://leetcode.cn/problems/jump-game-ii/',
-                       1, "45", 'jump-game-ii')
+    create_information(2, 'https://leetcode.cn/problems/find-all-anagrams-in-a-string',
+                       1, "438", 'find-all-anagrams-in-a-string')
 
