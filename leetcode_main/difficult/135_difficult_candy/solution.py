@@ -68,7 +68,7 @@ class Solution:
 						else:
 							break
 					break
-			return sum(result_list)
+		return sum(result_list)
 	
 	def candy_offical1(self, ratings: List[int]) -> int:
 		length = len(ratings)
@@ -106,4 +106,4 @@ if __name__ == "__main__":
 		[1,2,2]
 	]
 	sol = Solution()
-	sol.candy(test_cases[1])
+	# sol.candy(test_cases[1])
