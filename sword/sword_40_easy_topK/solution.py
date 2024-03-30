@@ -5,9 +5,9 @@ from typing import List
 
 
 class Solution:
-    def getLeastNumbers(self, arr: List[int], k: int) -> List[int]:
-        heapify(arr)
-        result =[]
-        while k>-1:
-            result.append(heappop(arr))
-        return result
+	def getLeastNumbers(self, arr: List[int], k: int) -> List[int]:
+		heapify(arr)
+		result =[]
+		while k>-1:
+			result.append(heappop(arr))
+		return result

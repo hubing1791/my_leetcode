@@ -4,14 +4,14 @@ from custom_moudle.initialize_data_struct.InitializeTree import TreeNode
 
 
 class Solution:
-    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        result = root
-        p_val, q_val = p.val, q.val
-        while 1:
-            if result.val < p_val and result.val < q_val:
-                result = result.right
-            elif result.val > p_val and result.val > q_val:
-                result = result.left
-            else:
-                break
-        return result
+	def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+		result = root
+		p_val, q_val = p.val, q.val
+		while 1:
+			if result.val < p_val and result.val < q_val:
+				result = result.right
+			elif result.val > p_val and result.val > q_val:
+				result = result.left
+			else:
+				break
+		return result

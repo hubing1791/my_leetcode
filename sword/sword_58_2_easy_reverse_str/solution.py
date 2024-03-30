@@ -2,5 +2,5 @@
 # 2022-05-06
 
 class Solution:
-    def reverseLeftWords(self, s: str, n: int) -> str:
-        return s[n:] + s[:n]
+	def reverseLeftWords(self, s: str, n: int) -> str:
+		return s[n:] + s[:n]

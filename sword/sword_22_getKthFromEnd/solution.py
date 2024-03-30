@@ -4,12 +4,12 @@ from custom_moudle.initialize_data_struct.InitializeListNode import ListNode
 
 
 class Solution:
-    def getKthFromEnd(self, head: ListNode, k: int) -> ListNode:
-        start, end = head, head
-        for i in range(k):
-            end = end.next
-        while end:
-            start = start.next
-            end = end.next
+	def getKthFromEnd(self, head: ListNode, k: int) -> ListNode:
+		start, end = head, head
+		for i in range(k):
+			end = end.next
+		while end:
+			start = start.next
+			end = end.next
 
-        return start
+		return start

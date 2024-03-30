@@ -1,8 +1,8 @@
-git init       初始化文件夹为本地仓库
+git init	   初始化文件夹为本地仓库
 
 git status   来查看你前的状态
 
-git add .     把该目录下的所有文件添加到仓库
+git add .	 把该目录下的所有文件添加到仓库
 
 git commit 把项目提交到本地仓库
 
