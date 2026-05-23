@@ -1,1 +1,3 @@
-### 正在重新整理排版刷题记录，目前这个目录下problem.md还没更新，需要看的话内容在博客，本人git库就有，或者访问www.notyou.top
+### sword-16-数值的整数次方
+
+[题目链接](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)

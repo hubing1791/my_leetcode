@@ -1,1 +1,3 @@
-### 正在重新整理排版刷题记录，目前这个目录下problem.md还没更新，需要看的话内容在博客，本人git库就有，或者访问www.notyou.top
+### sword-3-数组中重复的数字
+
+[题目链接](https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)
